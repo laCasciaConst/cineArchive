@@ -1,83 +1,30 @@
 <!doctype html>
-<html lang="ko">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>CINÉ ARCHIVE</title>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CINÉ ARCHIVE</title>
   <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <div class="shell">
-    <aside class="side"><button class="side-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"
-        title="Menu">☰</button>
-      <div class="brand">CINÉ<br>ARCHIVE.</div>
-      <div class="sub">A PERSONAL MOVING IMAGE COLLECTION · EST. 2021</div>
-      <nav class="side-nav"><button class="active" data-nav="archive">ARCHIVE</button><button
-          data-nav="diary">DIARY</button><button data-nav="watchlist">WATCHLIST</button><button
-          data-nav="stats">STATISTICS</button></nav>
-      <div class="side-bottom">PRIVATE COLLECTION<br>EST. 2021—2026</div>
-    </aside>
-    <div class="wrap">
-      <header class="top"></header>
-      <section class="hero">
-        <div class="herohead">
-          <div>
-            <div class="eyebrow">PERSONAL COLLECTION Nº 01</div>
-            <h1>그래도 난 좋아해요</h1>
-            <p>(의외로 별점은 별개)</p>
-          </div>
-          <div class="eyebrow">MANUALLY CURATED · NOT RANKED</div>
-        </div>
-        <div class="marquee">
-          <div class="track" id="track"></div>
-        </div>
-      </section>
-      <hr class="rule">
-      <main class="archive">
-        <div class="sectiontop">
-          <div>
-            <div class="eyebrow" id="kicker">THE COMPLETE COLLECTION</div>
-            <h2 id="heading">Film Archive</h2>
-          </div><button class="year-page-back" id="yearPageBack" style="display:none">← BACK TO ARCHIVE</button>
-          <div class="count" id="count">—</div>
-        </div>
-        <div class="stats">
-          <div class="stat"><strong id="total">—</strong><span>ENTRIES</span></div>
-          <div class="stat"><strong id="movies">—</strong><span>MOVIES</span></div>
-          <div class="stat"><strong id="series">—</strong><span>TV / SERIES</span></div>
-          <div class="stat"><strong>2021—26</strong><span>ARCHIVE PERIOD</span></div>
-        </div>
-        <div class="tools">
-          <div class="filters" id="filters"><button class="chip active" data-type="ALL">ALL</button><button class="chip"
-              data-type="F">FILM</button><button class="chip" data-type="S">SERIES</button><button class="chip"
-              data-type="A">ANIMATION</button><button class="chip" data-type="N">OTHER</button></div>
-          <div class="filters"><input class="search" id="search" placeholder="Search title..."><select class="select"
-              id="year">
-              <option value="ALL">ALL YEARS</option>
-            </select><select class="select" id="sort">
-              <option value="date">WATCHED DATE ↓</option>
-              <option value="year">YEAR ↓</option>
-              <option value="rating">RATING ↓</option>
-              <option value="title">TITLE A–Z</option>
-            </select><button class="viewbtn active" id="gridBtn" title="Grid view">▦</button><button class="viewbtn"
-              id="listBtn" title="List view">☷</button></div>
-        </div>
-        <div id="catalog" class="grid"></div>
-      </main>
-      <footer class="footer"><span>CINÉ ARCHIVE. · PRIVATE COLLECTION</span><span>AN ONGOING RECORD OF MOVING
-          IMAGES.</span></footer>
-    </div>
-  </div>
-  <div class="toast" id="toast"></div>
+</head><body>
+<div class="shell"><aside class="side"><button class="side-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" title="Menu">☰</button><div class="brand">CINÉ<br>ARCHIVE.</div><div class="sub">A PERSONAL MOVING IMAGE COLLECTION · EST. 2021</div><nav class="side-nav"><button class="active" data-nav="archive">ARCHIVE</button><button data-nav="diary">DIARY</button><button data-nav="watchlist">WATCHLIST</button><button data-nav="stats">STATISTICS</button></nav><div class="side-bottom">PRIVATE COLLECTION<br>EST. 2021—2026</div></aside><div class="wrap"><header class="top"></header>
+<section class="hero"><div class="herohead"><div><div class="eyebrow">PERSONAL COLLECTION Nº 01</div><h1>그래도 난 좋아해요</h1><p>(의외로 별점은 별개)</p></div><div class="eyebrow">MANUALLY CURATED · NOT RANKED</div></div><div class="marquee"><div class="track" id="track"></div></div></section><hr class="rule">
+<main class="archive"><div class="sectiontop"><div><div class="eyebrow" id="kicker">THE COMPLETE COLLECTION</div><h2 id="heading">Film Archive</h2></div><button class="year-page-back" id="yearPageBack" style="display:none">← BACK TO ARCHIVE</button><div class="count" id="count">—</div></div><div class="stats"><div class="stat"><strong id="total">—</strong><span>ENTRIES</span></div><div class="stat"><strong id="movies">—</strong><span>MOVIES</span></div><div class="stat"><strong id="series">—</strong><span>TV / SERIES</span></div><div class="stat"><strong>2021—26</strong><span>ARCHIVE PERIOD</span></div></div>
+<div class="tools"><div class="filters" id="filters"><button class="chip active" data-type="ALL">ALL</button><button class="chip" data-type="F">FILM</button><button class="chip" data-type="S">SERIES</button><button class="chip" data-type="A">ANIMATION</button><button class="chip" data-type="N">OTHER</button></div><div class="filters"><input class="search" id="search" placeholder="Search title..."><select class="select" id="year"><option value="ALL">ALL YEARS</option></select><select class="select" id="sort"><option value="date">WATCHED DATE ↓</option><option value="year">YEAR ↓</option><option value="rating">RATING ↓</option><option value="title">TITLE A–Z</option></select><button class="viewbtn active" id="gridBtn" title="Grid view">▦</button><button class="viewbtn" id="listBtn" title="List view">☷</button></div></div><div id="catalog" class="grid"></div></main><footer class="footer"><span>CINÉ ARCHIVE. · PRIVATE COLLECTION</span><span>AN ONGOING RECORD OF MOVING IMAGES.</span></footer></div></div>
+<div class="toast" id="toast"></div>
+  <script src="js/data.js" defer></script>
+  <script src="js/state.js" defer></script>
+  <script src="js/archive.js" defer></script>
+  <script src="js/posters.js" defer></script>
+  <script src="js/storage.js" defer></script>
+  <script src="js/data-tools.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body></html>
 
 
 
 
 
 
-  <script src="script.js" defer></script>
-</body>
 
-</html>
+
+
+
+
+
+
